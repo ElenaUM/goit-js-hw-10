@@ -2,29 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document2</title>
+    <title>Snackbar</title>
+    <meta name="description" content="Snackbar with Promicemaker" />
+    <link href="./css/2-snackbar.css" rel="stylesheet" />
   </head>
+
   <body>
-    <form class="form">
-      <label>
-        Delay (ms)
-        <input type="number" name="delay" required />
-      </label>
+    <a href="./index.html">Go to home</a>
 
-      <fieldset>
-        <legend>State</legend>
+    <section class="section-snackbar">
+      <form class="form">
         <label>
-          <input type="radio" name="state" value="fulfilled" required />
-          Fulfilled
+          Delay (ms)
+          <input name="delay" type="number" required />
         </label>
-        <label>
-          <input type="radio" name="state" value="rejected" required />
-          Rejected
-        </label>
-      </fieldset>
 
-      <button type="submit">Create notification</button>
-    </form>
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input name="state" type="radio" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input name="state" type="radio" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
+    </section>
+    <script src="./js/2-snackbar.js" type="module" defer></script>
   </body>
 </html>
